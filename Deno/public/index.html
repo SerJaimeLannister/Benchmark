@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Binary Converter</title>
+        <script src="https://unpkg.com/htmx.org@1.9.10"></script>
+        <link rel="stylesheet" href="/styles.css" />
+    </head>
+    <body>
+        <div class="container">
+            <h2>Decimal to Binary Converter</h2>
+            <form hx-post="/convert" hx-target="#result">
+                <input
+                    type="number"
+                    name="number"
+                    placeholder="Enter a decimal number"
+                    required
+                />
+                <button type="submit">Convert to Binary</button>
+            </form>
+            <div id="result">Result will appear here</div>
+        </div>
+
+        <!-- Live Reload Script -->
+    </body>
+</html>
