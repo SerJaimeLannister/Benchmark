@@ -1,0 +1,45 @@
+./hey -n 2000 -c 50 -m POST -d "number=1000" http://127.0.0.1:1337/convert
+
+
+Summary:
+  Total:	1.7676 secs
+  Slowest:	0.0557 secs
+  Fastest:	0.0057 secs
+  Average:	0.0437 secs
+  Requests/sec:	1131.4983
+
+  Total data:	334000 bytes
+  Size/request:	167 bytes
+
+Response time histogram:
+  0.006 [1]	|
+  0.011 [7]	|
+  0.016 [6]	|
+  0.021 [3]	|
+  0.026 [4]	|
+  0.031 [7]	|
+  0.036 [8]	|
+  0.041 [117]	|■■■
+  0.046 [1464]	|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+  0.051 [320]	|■■■■■■■■■
+  0.056 [63]	|■■
+
+
+Latency distribution:
+  10% in 0.0410 secs
+  25% in 0.0424 secs
+  50% in 0.0438 secs
+  75% in 0.0452 secs
+  90% in 0.0468 secs
+  95% in 0.0489 secs
+  99% in 0.0528 secs
+
+Details (average, fastest, slowest):
+  DNS+dialup:	0.0001 secs, 0.0057 secs, 0.0557 secs
+  DNS-lookup:	0.0000 secs, 0.0000 secs, 0.0000 secs
+  req write:	0.0000 secs, 0.0000 secs, 0.0020 secs
+  resp wait:	0.0432 secs, 0.0027 secs, 0.0547 secs
+  resp read:	0.0003 secs, 0.0000 secs, 0.0045 secs
+
+Status code distribution:
+  [400]	2000 responses
